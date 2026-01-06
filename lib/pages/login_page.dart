@@ -70,7 +70,6 @@ class LoginPage extends StatelessWidget {
                 CustomButton(
                   onPressed: login,
                   text: 'Send Verified Code',
-                  backgroundColor: Theme.of(context).colorScheme.secondary,
                   padding: EdgeInsets.symmetric(horizontal: 25, vertical: 20),
                 ),
                 SizedBox(height: 40),

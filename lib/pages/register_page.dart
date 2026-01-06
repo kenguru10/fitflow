@@ -1,13 +1,12 @@
 import 'package:fitflow/components/custom_button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({super.key});
 
-  void register() {
-    // Implement login logic here
-  }
+  void register() {}
 
   @override
   Widget build(BuildContext context) {
@@ -23,6 +22,11 @@ class RegisterPage extends StatelessWidget {
               width: 48,
               height: 48,
             ),
+          ),
+          Positioned(
+            top: 30,
+            right: 20,
+            child: SvgPicture.asset('icons/close.svg', width: 24, height: 24),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20.0),
@@ -70,7 +74,6 @@ class RegisterPage extends StatelessWidget {
                 CustomButton(
                   onPressed: register,
                   text: 'Send Verified Code',
-                  backgroundColor: Theme.of(context).colorScheme.secondary,
                   padding: EdgeInsets.symmetric(horizontal: 25, vertical: 20),
                 ),
                 SizedBox(height: 40),

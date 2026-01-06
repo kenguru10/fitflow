@@ -1,0 +1,5 @@
+{
+  "watch": ["lib", "web", "test"],
+  "ext": "dart,html,css,js",
+  "exec": "flutter attach --device-id web-server && echo r"
+}
